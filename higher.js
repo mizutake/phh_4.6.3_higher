@@ -4,12 +4,12 @@ function myHigherFunction(func) {
     return outsideFunction;
 }
 //(普通)の関数
-function outsideFunction() {
-    console.log('outsideFunction');
+function outsideFunction(value) {
+    console.log('value:' + value);
 }
-let returnValue = myHigherFunction();
-returnValue();
-
+// let returnValue = myHigherFunction();
+// returnValue();
+myHigherFunction()('引数だよ')
 //outerHeight ();//関数呼び出し
 
 //myHigherFunction();
