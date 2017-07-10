@@ -9,6 +9,12 @@ function showElement(value, key) {
     console.log(key + ':' + value);
 }
 
+function showDecoratedElement(value, key) {
+    //console.log('キー(' + key + ') : 値（' + value + ')');
+    console.log(`キ-(${key}) : 値(${value})`);
+}
+
+
 let ary = [1, 2, 4, 8, 16];
-//arrayWalk(ary, showElement);
-ary.forEach (showElement);
+arrayWalk (ary, showDecoratedElement);
+//ary.forEach (showElement);
